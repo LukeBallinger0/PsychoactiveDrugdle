@@ -38,99 +38,99 @@ button.alt{background:var(--no)}
 <p>Values were compiled from general knowledge of PsychonautWiki-style profiles and are simplified for gameplay. Check psychonautwiki.org for full details. For education only, not drug-use advice.</p></details>
 <script>
 // name|effect(-2..2)|halluc(0-2)|size(0-2)|basicN|analogue|addiction(0-2)|duration(0-2)|class|mechanism
-const RAW=`Psilocybin|1|2|1|1|0|0|1|Tryptamine|Serotonergic
-LSD|1|2|1|1|0|0|2|Ergoline|Serotonergic
+const RAW=`Psilocybin|-1|2|1|1|0|0|1|Tryptamine|Serotonergic
+LSD|1|2|2|1|0|0|2|Ergoline|Serotonergic
 Mescaline|1|2|0|1|0|0|2|Phenethylamine|Serotonergic
-DMT|0|2|0|1|0|0|0|Tryptamine|Serotonergic
+DMT|-1|2|1|1|0|0|0|Tryptamine|Serotonergic
 1P-LSD|1|2|2|1|1|0|2|Ergoline|Serotonergic
-LSA|-1|2|1|1|0|0|2|Ergoline|Serotonergic
-AL-LAD|1|2|1|1|1|0|2|Ergoline|Serotonergic
-aMT|1|2|0|1|1|0|2|Tryptamine|Serotonergic
-DET|1|2|0|1|1|0|1|Tryptamine|Serotonergic
-DiPT|0|1|0|1|1|0|1|Tryptamine|Serotonergic
-4-AcO-DMT|1|2|0|1|1|0|1|Tryptamine|Serotonergic
-4-HO-MET|1|2|0|1|1|0|1|Tryptamine|Serotonergic
-Bufotenin|0|1|0|1|0|0|1|Tryptamine|Serotonergic
-Ibogaine|1|2|1|1|0|0|2|Indole alkaloid|Serotonergic
+LSA|-1|2|2|1|0|0|2|Ergoline|Serotonergic
+AL-LAD|1|2|2|1|1|0|2|Ergoline|Serotonergic
+aMT|2|2|1|1|1|0|2|Tryptamine|Serotonergic
+DET|0|2|1|1|1|0|1|Tryptamine|Serotonergic
+DiPT|0|1|1|1|1|0|1|Tryptamine|Serotonergic
+4-AcO-DMT|0|2|1|1|1|0|1|Tryptamine|Serotonergic
+4-HO-MET|-1|2|1|1|1|0|1|Tryptamine|Serotonergic
+Bufotenin|0|1|1|1|0|0|1|Tryptamine|Serotonergic
+Ibogaine|1|2|2|1|0|0|2|Indole alkaloid|Serotonergic
 2C-B|1|2|1|1|1|0|1|Phenethylamine|Serotonergic
-2C-D|1|2|0|1|1|0|2|Phenethylamine|Serotonergic
+2C-D|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
 2C-I|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
 2C-T-2|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
 2C-T-7|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
 2C-B-FLY|1|2|1|1|1|0|2|Benzodifuran|Serotonergic
 DOM|1|2|0|1|1|0|2|Substituted amphetamine|Serotonergic
-DOI|1|2|1|1|1|0|2|Substituted amphetamine|Serotonergic
+DOI|1|2|0|1|1|0|2|Substituted amphetamine|Serotonergic
 DOC|1|2|0|1|1|0|2|Substituted amphetamine|Serotonergic
 Bromo-DragonFLY|1|2|1|1|1|0|2|Benzodifuran|Serotonergic
 25C-NBOH|1|2|1|1|1|0|1|Phenethylamine|Serotonergic
-25B-NBOH|1|2|2|1|1|0|1|Phenethylamine|Serotonergic
+25B-NBOH|1|2|1|1|1|0|1|Phenethylamine|Serotonergic
 25C-NBOMe|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
-25I-NBOMe|1|2|2|1|1|0|2|Phenethylamine|Serotonergic
-Alprazolam|-2|0|1|0|0|2|1|Benzodiazepine|GABAergic
-Clonazepam|-2|0|1|0|0|2|2|Benzodiazepine|GABAergic
-Diazepam|-2|0|1|0|0|1|2|Benzodiazepine|GABAergic
-Flunitrazepam|-2|0|1|0|0|2|2|Benzodiazepine|GABAergic
-Lorazepam|-2|0|1|0|0|2|2|Benzodiazepine|GABAergic
-Midazolam|-2|0|1|0|0|1|1|Benzodiazepine|GABAergic
+25I-NBOMe|1|2|1|1|1|0|2|Phenethylamine|Serotonergic
+Alprazolam|-2|0|2|0|0|2|1|Benzodiazepine|GABAergic
+Clonazepam|-2|0|2|0|0|2|2|Benzodiazepine|GABAergic
+Diazepam|-2|0|2|0|0|1|2|Benzodiazepine|GABAergic
+Flunitrazepam|-2|0|2|0|0|2|2|Benzodiazepine|GABAergic
+Lorazepam|-2|0|2|0|0|2|2|Benzodiazepine|GABAergic
+Midazolam|-2|0|2|0|0|1|1|Benzodiazepine|GABAergic
 Etizolam|-2|0|2|0|1|2|1|Benzodiazepine|GABAergic
-Phenobarbital|-2|0|0|0|0|2|2|Barbiturate|GABAergic
+Phenobarbital|-2|0|1|0|0|2|2|Barbiturate|GABAergic
 Gaboxadol|-2|1|0|1|1|0|1|Isoxazole|GABAergic
 Muscimol|-1|2|0|1|0|0|1|Isoxazole|GABAergic
-Zolpidem|-2|0|1|0|0|1|1|Z-drug|GABAergic
+Zolpidem|-2|0|2|0|0|1|1|Z-drug|GABAergic
 Zopiclone|-2|0|2|1|0|1|1|Z-drug|GABAergic
-Baclofen|-2|0|0|1|1|0|1|GABA analogue|GABAergic
-Phenibut|-2|0|0|1|1|2|2|GABA analogue|GABAergic
-GHB|-2|0|0|0|0|2|1|Hydroxy acid|GABAergic
-GBL|-2|0|0|0|1|2|1|Lactone|GABAergic
-Kava|-1|0|0|0|0|0|1|Kavalactone|GABAergic
+Baclofen|-2|0|1|1|1|0|1|GABA analogue|GABAergic
+Phenibut|-2|0|1|1|1|2|2|GABA analogue|GABAergic
+GHB|-1|0|0|0|0|2|1|Hydroxy acid|GABAergic
+GBL|-1|0|0|0|1|2|1|Lactone|GABAergic
+Kava|-1|0|1|0|0|0|1|Kavalactone|GABAergic
 Methaqualone|-2|0|1|0|0|2|1|Quinazolinone|GABAergic
 Gabapentin|-1|0|0|1|1|0|2|GABA analogue|Ca-channel
 Pregabalin|-1|0|0|1|1|0|2|GABA analogue|Ca-channel
-Codeine|-1|0|1|1|0|2|1|Morphinan|Opioid
+Codeine|-1|0|2|1|0|2|1|Morphinan|Opioid
 Diacetylmorphine (Heroin)|-2|0|2|1|0|2|1|Morphinan|Opioid
-Fentanyl|-2|0|1|1|0|2|1|Phenylpiperidine|Opioid
-Hydrocodone|-2|0|1|1|0|2|1|Morphinan|Opioid
-Hydromorphone|-2|0|1|1|0|2|1|Morphinan|Opioid
-Kratom|1|0|2|1|0|1|1|Indole alkaloid|Opioid
+Fentanyl|-2|0|2|1|0|2|1|Phenylpiperidine|Opioid
+Hydrocodone|-2|0|2|1|0|2|1|Morphinan|Opioid
+Hydromorphone|-2|0|2|1|0|2|1|Morphinan|Opioid
+Kratom|0|0|2|1|0|1|1|Indole alkaloid|Opioid
 Methadone|-2|0|1|1|0|2|2|Diphenylpropylamine|Opioid
-Morphine|-2|0|1|1|0|2|1|Morphinan|Opioid
+Morphine|-2|0|2|1|0|2|1|Morphinan|Opioid
 Tramadol|-1|0|1|1|0|1|1|Aminocyclohexanol|Opioid
 U-47700|-2|0|1|1|1|2|1|Benzamide|Opioid
 Tianeptine|1|0|2|1|0|2|1|Tricyclic|Opioid
 Mirtazapine|-2|0|1|1|0|0|2|Tetracyclic|5-HT/alpha-2 antagonist
-Diphenhydramine|-1|1|1|1|0|0|1|Ethanolamine|Antihistamine
+Diphenhydramine|-2|1|1|1|0|0|1|Ethanolamine|Antihistamine
 Cannabis|-1|1|1|0|0|1|1|Cannabinoid|Cannabinoid
-Datura|-1|2|1|1|0|0|2|Tropane alkaloid|Anticholinergic
+Datura|-1|2|2|1|0|0|2|Tropane alkaloid|Anticholinergic
 Salvia (salvinorin A)|0|2|2|0|0|0|0|Diterpenoid|Kappa agonist
-Ketamine|-2|2|0|1|0|1|1|Arylcyclohexylamine|NMDA antagonist
-Methoxetamine (MXE)|-1|2|0|1|1|0|1|Arylcyclohexylamine|NMDA antagonist
-PCP|1|2|0|1|0|1|2|Arylcyclohexylamine|NMDA antagonist
-DCK|-1|2|0|1|1|1|1|Arylcyclohexylamine|NMDA antagonist
-2FDCK|-1|2|0|1|1|1|1|Arylcyclohexylamine|NMDA antagonist
+Ketamine|-2|2|1|1|0|1|1|Arylcyclohexylamine|NMDA antagonist
+Methoxetamine (MXE)|-1|2|1|1|1|0|1|Arylcyclohexylamine|NMDA antagonist
+PCP|1|2|2|1|0|1|2|Arylcyclohexylamine|NMDA antagonist
+DCK|-1|2|1|1|1|1|1|Arylcyclohexylamine|NMDA antagonist
+2FDCK|-1|2|1|1|1|1|1|Arylcyclohexylamine|NMDA antagonist
 DXM|-1|1|1|1|0|0|2|Morphinan|NMDA antagonist
 Memantine|0|1|0|1|0|0|2|Adamantane|NMDA antagonist
-Nitrous oxide|-1|1|0|0|0|0|0|Inorganic gas|NMDA antagonist
-Xenon|-1|1|0|0|0|0|0|Noble gas|NMDA antagonist
+Nitrous oxide|-2|1|0|0|0|0|0|Inorganic gas|NMDA antagonist
+Xenon|-2|1|0|0|0|0|0|Noble gas|NMDA antagonist
 Amphetamine|2|0|0|1|0|2|2|Substituted amphetamine|Monoamine releaser
 2-FA|2|0|0|1|1|1|1|Substituted amphetamine|Monoamine releaser
 2-FMA|2|0|0|1|1|1|1|Substituted amphetamine|Monoamine releaser
 Methamphetamine|2|0|0|1|0|2|2|Substituted amphetamine|Monoamine releaser
 Lisdexamphetamine|2|0|1|1|1|1|2|Substituted amphetamine|Monoamine releaser
 3-FPM|2|0|0|1|1|1|1|Phenmetrazine|Monoamine releaser
-Methylphenidate|2|0|0|1|0|1|1|Phenidate|Reuptake inhibitor
-Ethylphenidate|2|0|0|1|1|1|1|Phenidate|Reuptake inhibitor
+Methylphenidate|2|0|1|1|0|1|1|Phenidate|Reuptake inhibitor
+Ethylphenidate|2|0|1|1|1|1|1|Phenidate|Reuptake inhibitor
 3-MMC|2|0|0|1|1|2|1|Cathinone|Monoamine releaser
 Cathinone|2|0|0|1|0|1|1|Cathinone|Monoamine releaser
 Methcathinone|2|0|0|1|1|2|1|Cathinone|Monoamine releaser
-a-PVP|2|0|0|1|1|2|1|Cathinone|Reuptake inhibitor
+a-PVP|2|0|1|1|1|2|1|Cathinone|Reuptake inhibitor
 MDPV|2|0|1|1|1|2|1|Cathinone|Reuptake inhibitor
 Cocaine|2|0|1|1|0|2|1|Tropane alkaloid|Reuptake inhibitor
 Caffeine|1|0|0|0|0|1|1|Xanthine|Adenosine antagonist
 Nicotine|1|0|0|1|0|2|0|Pyridine alkaloid|Nicotinic agonist
 Propylhexedrine|1|0|0|1|1|1|1|Cycloalkylamine|Monoamine releaser
 JWH-018|-1|1|2|0|1|2|1|Naphthoylindole|Cannabinoid
-JWH-073|-1|1|1|0|1|2|1|Naphthoylindole|Cannabinoid
-Alkyl nitrates|0|0|0|0|0|0|0|Nitrite ester|Vasodilator`;
+JWH-073|-1|1|2|0|1|2|1|Naphthoylindole|Cannabinoid
+Alkyl nitrates|-1|0|0|1|0|0|0|Nitrite ester|Vasodilator`;
 const D=RAW.split("\n").map(l=>{const p=l.split("|");return{name:p[0],ef:+p[1],hl:+p[2],sz:+p[3],n:p[4]=="1",ana:p[5]=="1",ad:+p[6],dur:+p[7],cls:p[8],mech:p[9]}});
 const DUR=["<1h","1–6h","6–12h+"],MAX=7;
 let target,guesses,over,isDaily=true;
