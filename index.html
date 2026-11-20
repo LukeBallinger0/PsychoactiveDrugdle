@@ -40,7 +40,12 @@ h1{font-size:1.4rem}
 .bar input{flex:1 1 100%;min-width:0;padding:14px 12px;font-size:1.05rem}
 .bar button{flex:1;padding:14px 10px}
 #sug button{flex:1;padding:12px 8px;font-size:1rem}
-.meta{flex-wrap:wrap}
+.meta{flex-wrap:wrap;justify-content:flex-start;gap:8px 12px;font-size:.8rem}
+#left{flex:1 1 100%}
+#flags{gap:12px}
+.fl i,.key span{width:16px;height:16px;border-radius:4px}
+.key span{margin:0 5px 0 0}
+.key span+span{margin-left:10px}
 .row.h{display:none}
 .row{grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px;padding:8px;background:var(--card);border:1px solid var(--bd);border-radius:12px}
 .row>div{flex-direction:column;min-height:62px;font-size:1rem;font-weight:600;padding:8px 6px}
@@ -49,8 +54,8 @@ h1{font-size:1.4rem}
 .row>div.n small{display:none}
 }
 </style></head><body><main>
-<h1>🧪 PsychoactiveDRUGDLE</h1>
-<div class="sub">Guess the mystery psychoactive substance. Each guess reveals which properties match.</div>
+<h1>💊PsychoactiveDRUGDLE</h1>
+<div class="sub">Guess the mystery drug.</div>
 <div class="bar"><input id="in" placeholder="Type a substance name…" autocomplete="off" autocapitalize="off" spellcheck="false"><button id="go">Guess</button><button class="alt" id="new">Play again</button></div>
 <div id="sug"></div>
 <div class="meta"><span id="left"></span><span id="flags"></span><span class="key"><span style="background:var(--ok)"></span>match<span style="background:var(--no)"></span>no match</span></div>
