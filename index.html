@@ -130,7 +130,8 @@ Nicotine|1|0|0|1|0|2|0|Pyridine alkaloid|Nicotinic agonist
 Propylhexedrine|1|0|0|1|1|1|1|Cycloalkylamine|Monoamine releaser
 JWH-018|-1|1|2|0|1|2|1|Naphthoylindole|Cannabinoid
 JWH-073|-1|1|2|0|1|2|1|Naphthoylindole|Cannabinoid
-Alkyl nitrates|-1|0|0|1|0|0|0|Nitrite ester|Vasodilator`;
+Alkyl nitrates|-1|0|0|1|0|0|0|Nitrite ester|Vasodilator
+MDMA|2|1|0|1|0|1|1|Substituted amphetamine|Monoamine releaser`;
 const D=RAW.split("\n").map(l=>{const p=l.split("|");return{name:p[0],ef:+p[1],hl:+p[2],sz:+p[3],n:p[4]=="1",ana:p[5]=="1",ad:+p[6],dur:+p[7],cls:p[8],mech:p[9]}});
 const DUR=["<1h","1–6h","6–12h+"],MAX=7;
 let target,guesses,over,isDaily=true;
